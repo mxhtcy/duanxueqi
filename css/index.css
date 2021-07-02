@@ -29,3 +29,15 @@
 	bottom: 0;
 	margin: auto;	
 }
+#start{
+	position: relative;
+	left:30px;
+	top:0;
+	right:0;
+	bottom: 0;
+}
+#start img:hover{
+	transform: scale(1.3);
+	transition:all 0.3s ease;
+	
+}
