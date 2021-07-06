@@ -3,7 +3,7 @@
 li{list-style:none;}
 body{
 	/*margin: 10px;*/
-	background-color: #134857;
+	background-color: #E9E7E7;
 }
 .total{
 	width: 100%;
@@ -17,17 +17,19 @@ body{
 }
 /* wrap */
 .wrap{
-	margin:0px auto;
+	margin:50px auto;
 	width:1080px;
-	height:50px;
+	height:600px;
 	position:relative;
 	overflow:hidden;
+	border-radius:10px;
 	/*float: left;*/
 }
 .pic{
 	width:600px;
-	height:437px;
+	height:600px;
 	cursor:pointer;
+	border-radius:10px 0px 0px 10px;
 }
 .pic1{
 	background:url('../image/img01.png');
