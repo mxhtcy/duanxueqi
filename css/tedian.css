@@ -233,6 +233,6 @@ body{background-color: #E9E7E7}
 }
 .return{
 	position:absolute;
-	left:1280px;
-	top:630px;
+	left:90%;
+	top:80%;
 }

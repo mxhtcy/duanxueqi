@@ -77,8 +77,8 @@ body {
   background: #fff;
 }
 p{
-	font-size: 23px;
-	line-height:normal;
+	font-size: 20px;
+	line-height:35px;
 	text-indent:2em;
 }
 .clearfix::before,
@@ -302,6 +302,6 @@ s, i, em {
 }
 .return{
 	position:absolute;
-	left:1280px;
-	top:630px;
+	left:90%;
+	top:80%;
 }

@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>答题测试</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <style>
+        .list{width: 100%;display: none;margin:20px 0 0 0;}
+        #list1{display: block;}
+        label{font-weight: bold;}
+        .layui-layer{width: 600px;margin: 0 auto;}
+        #color{
+            background:-webkit-linear-gradient(left,#147B96,#E6D205 25%,#147B96 50%,#E6D205 75%,#147B96);
+            color:transparent;
+            -webkit-background-clip:text;
+            background-size:200% 100%;
+            animation:masked-animation 1s infinite linear;
+        }
+        @-webkit-keyframes masked-animation {
+            100% {
+                background-position:-100% 0;
+            }
+        }
+		.return{
+			position:absolute;
+			left:90%;
+			top:80%;
+}
+		
+    </style>
+</head>
+	
+<body>
+<img alt="nansong" src="layui/img/1.png" width="100%" height="100%"/>
+<div style="width:480px; margin:40px auto;">
+
+	<div class="layui-progress layui-progress-big" lay-filter="demo" lay-showPercent="true">
+		<div class="layui-progress-bar layui-bg-blue" lay-percent="1%"></div>
+	</div>
+	
+	<div>
+		<div class="list" id="list1">
+			<label class="layui-font-20">1:宋代的五大名窑为?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh1" name="wh1" value="a" title="A:汝窑、官窑、哥窑、钧窑、定窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh1" name="wh1" value="b" title="B:汝窑、官窑、哥窑、钧窑、耀州窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh1" name="wh1" value="c" title="C:磁州窑官窑、哥窑、钧窑、耀州窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh1" name="wh1" value="d" title="D:磁州窑、官窑、哥窑、钧窑、定窑">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list2">
+			<label class="layui-font-20">2:宋代五大名窑中最为珍贵的是?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh2" name="wh2" value="a" title="A:哥窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh2" name="wh2" value="b" title="B:官窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh2" name="wh2" value="c" title="C:汝窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh2" name="wh2" value="d" title="D:定窑">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list3">
+			<label class="layui-font-20">3:五大名窑之说最早出现于哪本文献?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh3" name="wh3" value="a" title="A:《饮流斋说瓷》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh3" name="wh3" value="b" title="B:《宣德鼎彝谱》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh3" name="wh3" value="c" title="C:《静斋至正直记》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh3" name="wh3" value="d" title="D:《春风堂随笔》">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list4">
+			<label class="layui-font-20">4:南宋官窑在宋时位于?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh4" name="wh4" value="a" title="A：汴京">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh4" name="wh4" value="b" title="B：临安">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh4" name="wh4" value="c" title="C：汴梁">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh4" name="wh4" value="d" title="D：开封">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list5">
+			<label class="layui-font-20">5:“紫口铁足”所指的是南宋官窑瓷器具有的什么特点?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh5" name="wh5" value="a" title="A：青料发色浓艳，带结晶斑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh5" name="wh5" value="b" title="B：胎色略带灰、黄，胎质疏松">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh5" name="wh5" value="c" title="C：胎土含铁量极高，手感沉重，胎土呈深黑褐色">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh5" name="wh5" value="d" title="D：胎质细腻、胎体厚重，施釉层多">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list6">
+			<label class="layui-font-20">6:宋高宗在杭州所立的新窑名为?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh6" name="wh6" value="a" title="A：内窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh6" name="wh6" value="b" title="B：官窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh6" name="wh6" value="c" title="C：续窑">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh6" name="wh6" value="d" title="D：哥窑">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list7">
+			<label class="layui-font-20">7:“皇城东南临江渚，山名乌龟含异土”指的是南宋官窑的哪一步制作工艺?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh7" name="wh7" value="a" title="A：原料粉碎">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh7" name="wh7" value="b" title="B：采土取样">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh7" name="wh7" value="c" title="C：淘洗沉泥">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh7" name="wh7" value="d" title="D：踩踏练泥">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list8">
+			<label class="layui-font-20">8:“踩得脚下似黏胶，日渐西斜不停鞭”指的是南宋官窑的哪一步制作工艺?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh8" name="wh8" value="a" title="A：原料粉碎">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh8" name="wh8" value="b" title="B：淘洗沉泥">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh8" name="wh8" value="c" title="C：踩踏练泥">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh8" name="wh8" value="d" title="D：拉坯成型">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list9">
+			<label class="layui-font-20">9:“再将坯件细修整,剔除疵点与暇纹”指的是南宋官窑的哪一步制作工艺?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh9" name="wh9" value="a" title="A：上架凉坯">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh9" name="wh9" value="b" title="B：精工修坯">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh9" name="wh9" value="c" title="C：低温素烧">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh9" name="wh9" value="d" title="D：内外施釉">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list10">
+			<label class="layui-font-20">10:中国第一座以遗址为基础建立的陶瓷专题博物馆是?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh10" name="wh10" value="a" title="A：景德镇中国陶瓷博物馆">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh10" name="wh10" value="b" title="B：中国磁州窑博物馆">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh10" name="wh10" value="c" title="C：定瓷博物馆">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh10" name="wh10" value="d" title="D：南宋官窑博物馆">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list11">
+			<label class="layui-font-20">11:宋朝由民间专门为皇帝烧制的瓷器叫?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh11" name="wh11" value="a" title="A：官窑瓷">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh11" name="wh11" value="b" title="B：贡瓷">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh11" name="wh11" value="c" title="C：贡御瓷">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh11" name="wh11" value="d" title="D：民窑瓷">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list12">
+			<label class="layui-font-20">12:“官窑瓷宋修内司烧者土脉细润，色青带粉红，浓淡不一，有蟹爪纹 紫口铁足”出自?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh12" name="wh12" value="a" title="A：明初曹昭的《格古要论》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh12" name="wh12" value="b" title="B：明人高濂在《遵生安笺》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh12" name="wh12" value="c" title="C：明人高濂在《格古要论》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh12" name="wh12" value="d" title="D：明初曹昭的《遵生安笺》">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list13">
+			<label class="layui-font-20">13:明成化斗彩鸡缸杯是成化皇帝朱见深专门为谁烧制的?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh13" name="wh13" value="a" title="A：孝贞王皇后">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh13" name="wh13" value="b" title="B：万贵妃">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh13" name="wh13" value="c" title="C：柏贤妃">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh13" name="wh13" value="d" title="D：姚安妃">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list14">
+			<label class="layui-font-20">14:创造了2010年全球范围内中国艺术品交易最高价的中国瓷器文物是?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh14" name="wh14" value="a" title="A：元青花萧何月下追韩信图梅瓶">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh14" name="wh14" value="b" title="B：元青花鬼谷子下山图罐">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh14" name="wh14" value="c" title="C：明成化斗彩鸡缸杯">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh14" name="wh14" value="d" title="D：清乾隆粉彩镂空转心瓶">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list15">
+			<label class="layui-font-20">15:下列哪一件艺术品于2011年在中国嘉德春拍现场以4.255亿人民币拍出?</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh15" name="wh15" value="a" title="A：黄庭坚《砥柱铭》手卷">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh15" name="wh15" value="b" title="B：齐白石《松柏高立图·篆书四言联》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh15" name="wh15" value="c" title="C：北宋《子母猴图》">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh15" name="wh15" value="d" title="D：王羲之草书《平安帖》手卷">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="list" id="list16">
+			<label class="layui-font-20">16:2020——2021学年基于HTML5的交互式课件短学期。</label>
+			<div class="layui-form">
+				<div class="layui-form-item">
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh16" name="wh16" value="a" title="A：组长：tcy">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh16" name="wh16" value="b" title="B：组员：yjm">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh16" name="wh16" value="c" title="C：指导老师：mxm">
+					</div>
+					<div class="layui-input-block">
+						<input type="radio" lay-filter="wh16" name="wh16" value="d" title="D：班级：rg2">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+	<div class="return">
+			<a href="zonglan.html">
+				<img src="image/return.png" alt="" width="107px" height="43px">
+			</a>
+	</div>
+<img alt=""  src="layui/img/2.png" width="100%" height="100%">
+</body>
+<script src="layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'element','form','jquery'], function(){
+        var $ = layui.jquery,
+            layer = layui.layer,
+            element = layui.element,
+            form = layui.form;
+        form.on('radio(wh1)', function(data){
+            if (data.value == 'a'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"宋代的五大名窑为：汝窑、官窑、哥窑、钧窑、定窑。",
+                    yes: function (index,layero){
+                        $('#list1').hide();
+                        $('#list2').show();
+                        layer.close(index);
+                        element.progress('demo', '6%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:A；宋代的五大名窑为：汝窑、官窑、哥窑、钧窑、定窑。",
+                    yes: function (index,layero){
+                        $('#list1').hide();
+                        $('#list2').show();
+                        layer.close(index);
+                        element.progress('demo', '6%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh2)', function(data){
+            if (data.value == 'c'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"汝、官、哥、钧、定五大名窑是按照其珍贵程度来排名的。汝窑最为珍贵，其次是官窑。",
+                    yes: function (index,layero){
+                        $('#list2').hide();
+                        $('#list3').show();
+                        layer.close(index);
+                        element.progress('demo', '12%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:C:汝窑；汝、官、哥、钧、定五大名窑是按照其珍贵程度来排名的。汝窑最为珍贵，其次是官窑。",
+                    yes: function (index,layero){
+                        $('#list2').hide();
+                        $('#list3').show();
+                        layer.close(index);
+                        element.progress('demo', '12%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh3)', function(data){
+            if (data.value == 'b'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"五大名窑之说最早出现在明代皇室收藏目录《宣德鼎彝谱》：内库所藏汝、官、哥、钧、定名窑器皿，款式典雅者，写图进呈。",
+                    yes: function (index,layero){
+                        $('#list3').hide();
+                        $('#list4').show();
+                        layer.close(index);
+                        element.progress('demo', '18%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:B:《宣德鼎彝谱》；五大名窑之说最早出现在明代皇室收藏目录《宣德鼎彝谱》：内库所藏汝、官、哥、钧、定名窑器皿，款式典雅者，写图进呈。",
+                    yes: function (index,layero){
+                        $('#list3').hide();
+                        $('#list4').show();
+                        layer.close(index);
+                        element.progress('demo', '18%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh4)', function(data){
+            if (data.value == 'b'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"北宋和南宋时在京城汴京（汴梁，今开封）和临安（今杭州）由宫廷设窑烧造的青瓷，前者为北宋官窑，后者为南宋官窑。",
+                    yes: function (index,layero){
+                        $('#list4').hide();
+                        $('#list5').show();
+                        layer.close(index);
+                        element.progress('demo', '24%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:B:临安； 北宋和南宋时在京城汴京（汴梁，今开封）和临安（今杭州）由宫廷设窑烧造的青瓷，前者为北宋官窑，后者为南宋官窑。",
+                    yes: function (index,layero){
+                        $('#list4').hide();
+                        $('#list5').show();
+                        layer.close(index);
+                        element.progress('demo', '24%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh5)', function(data){
+            if (data.value == 'c'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"南宋官窑瓷器沿袭北宋风格，规整对称，宫廷气势，高雅大气，一丝不苟。因为胎土含铁量极高，手感沉重，胎土呈深黑褐色，后称“紫口铁足”。",
+                    yes: function (index,layero){
+                        $('#list5').hide();
+                        $('#list6').show();
+                        layer.close(index);
+                        element.progress('demo', '33%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:C:胎土含铁量极高，手感沉重，胎土呈深黑褐色；南宋官窑瓷器沿袭北宋风格，规整对称，宫廷气势，高雅大气，一丝不苟。因为胎土含铁量极高，手感沉重，胎土呈深黑褐色，后称“紫口铁足”。",
+                    yes: function (index,layero){
+                        $('#list5').hide();
+                        $('#list6').show();
+                        layer.close(index);
+                        element.progress('demo', '33%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh6)', function(data){
+            if (data.value == 'a'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"宋代的官窑分做两个地方，一为北宋的汴京官窑，一为宋朝南迁后，宋高宗在杭州所另立的新窑——杭州修内司官窑，也称作内窑。",
+                    yes: function (index,layero){
+                        $('#list6').hide();
+                        $('#list7').show();
+                        layer.close(index);
+                        element.progress('demo', '39%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:A:内窑； 宋代的官窑分做两个地方，一为北宋的汴京官窑，一为宋朝南迁后，宋高宗在杭州所另立的新窑——杭州修内司官窑，也称作内窑。",
+                    yes: function (index,layero){
+                        $('#list6').hide();
+                        $('#list7').show();
+                        layer.close(index);
+                        element.progress('demo', '39%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh7)', function(data){
+            if (data.value == 'b'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"皇城东南临江渚,山名乌龟含异土。内司设窑兹山下,日日采土动锹锄。动锹锄,历寒暑,山前官窑常举火。制成新瓷冠一代,至今犹遗烧窑处。" ,
+                    yes: function (index,layero){
+                        $('#list7').hide();
+                        $('#list8').show();
+                        layer.close(index);
+                        element.progress('demo', '45%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:B:采土取样； 皇城东南临江渚,山名乌龟含异土。内司设窑兹山下,日日采土动锹锄。动锹锄,历寒暑,山前官窑常举火。制成新瓷冠一代,至今犹遗烧窑处。",
+                    yes: function (index,layero){
+                        $('#list7').hide();
+                        $('#list8').show();
+                        layer.close(index);
+                        element.progress('demo', '45%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh8)', function(data){
+            if (data.value == 'c'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"二泥混合入池练,驱牛踩踏尽转圈。踩得脚下似胶粘,日渐西斜不停鞭。不停鞭,腿似绵,池畔监工好悠闲。遗迹应是汗湿透,池苔至今碧芊芊。",
+                    yes: function (index,layero){
+                        $('#list8').hide();
+                        $('#list9').show();
+                        layer.close(index);
+                        element.progress('demo', '51%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:C:踩踏练泥； 二泥混合入池练,驱牛踩踏尽转圈。踩得脚下似胶粘,日渐西斜不停鞭。不停鞭,腿似绵,池畔监工好悠闲。遗迹应是汗湿透,池苔至今碧芊芊。",
+                    yes: function (index,layero){
+                        $('#list8').hide();
+                        $('#list9').show();
+                        layer.close(index);
+                        element.progress('demo', '51%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh9)', function(data){
+            if (data.value == 'b'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"再将坯件细修整,剔除疵点与暇纹。来时未婚今白发,气衰手颤两眼昏。两眼昏,旧营生,技艺授以后来人。几代相传创盛誉,史册却留邵氏名。",
+                    yes: function (index,layero){
+                        $('#list9').hide();
+                        $('#list10').show();
+                        layer.close(index);
+                        element.progress('demo', '57%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:B:精工修坯； 再将坯件细修整,剔除疵点与暇纹。来时未婚今白发,气衰手颤两眼昏。两眼昏,旧营生,技艺授以后来人。几代相传创盛誉,史册却留邵氏名。",
+                    yes: function (index,layero){
+                        $('#list9').hide();
+                        $('#list10').show();
+                        layer.close(index);
+                        element.progress('demo', '57%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh10)', function(data){
+            if (data.value == 'd'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"矗立于昔日古窑址区的南宋官窑博物馆,是中国第一座以遗址为基础建立的陶瓷专题博物馆,它位于西湖风景区的南部,隔玉皇山与中国丝绸博物馆相邻,馆内建筑古朴陈列雅致,犹如一座陶瓷文化殿堂,展示着中国古代陶瓷文化的博大精深。",
+                    yes: function (index,layero){
+                        $('#list10').hide();
+                        $('#list11').show();
+                        layer.close(index);
+                        element.progress('demo', '63%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:D:南宋官窑博物馆； 矗立于昔日古窑址区的南宋官窑博物馆,是中国第一座以遗址为基础建立的陶瓷专题博物馆,它位于西湖风景区的南部,隔玉皇山与中国丝绸博物馆相邻,馆内建筑古朴陈列雅致,犹如一座陶瓷文化殿堂,展示着中国古代陶瓷文化的博大精深。",
+                    yes: function (index,layero){
+                        $('#list10').hide();
+                        $('#list11').show();
+                        layer.close(index);
+                        element.progress('demo', '63%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh11)', function(data){
+            if (data.value == 'c'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"由民间自己设计烧制的精美瓷器被皇家所采用，只能叫做贡瓷，不能称为官窑瓷。其中，专门为皇帝烧制的瓷器叫贡御瓷器，而为宫廷陈设和皇室成员烧制的瓷器，就只能称为贡瓷，不应称为贡御瓷。",
+                    yes: function (index,layero){
+                        $('#list11').hide();
+                        $('#list12').show();
+                        layer.close(index);
+                        element.progress('demo', '69%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:C:贡御瓷； 由民间自己设计烧制的精美瓷器被皇家所采用，只能叫做贡瓷，不能称为官窑瓷。其中，专门为皇帝烧制的瓷器叫贡御瓷器，而为宫廷陈设和皇室成员烧制的瓷器，就只能称为贡瓷，不应称为贡御瓷。",
+                    yes: function (index,layero){
+                        $('#list11').hide();
+                        $('#list12').show();
+                        layer.close(index);
+                        element.progress('demo', '69%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh12)', function(data){
+            if (data.value == 'a'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"明初曹昭的《格古要论》在描述官窑瓷器说：‘官窑瓷宋修内司烧者土脉细润，色青带粉红，浓淡不一，有蟹爪纹 紫口铁足’。明人高濂在《遵生安笺》里进一步说明杭州官窑青瓷的特征是‘色取粉青为上，淡白次之，油灰色之下也；纹取冰裂鳝血为上，梅花片墨纹次之，细碎纹之下也。’ ",
+                    yes: function (index,layero){
+                        $('#list12').hide();
+                        $('#list13').show();
+                        layer.close(index);
+                        element.progress('demo', '75%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:A:明初曹昭的《格古要论》； 明初曹昭的《格古要论》在描述官窑瓷器说：‘官窑瓷宋修内司烧者土脉细润，色青带粉红，浓淡不一，有蟹爪纹 紫口铁足’。明人高濂在《遵生安笺》里进一步说明杭州官窑青瓷的特征是‘色取粉青为上，淡白次之，油灰色之下也；纹取冰裂鳝血为上，梅花片墨纹次之，细碎纹之下也。’",
+                    yes: function (index,layero){
+                        $('#list12').hide();
+                        $('#list13').show();
+                        layer.close(index);
+                        element.progress('demo', '75%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh13)', function(data){
+            if (data.value == 'b'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"成化斗彩鸡缸杯为成化皇帝朱见深专门为万贵妃烧制。",
+                    yes: function (index,layero){
+                        $('#list13').hide();
+                        $('#list14').show();
+                        layer.close(index);
+                        element.progress('demo', '81%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:B:万贵妃； 成化斗彩鸡缸杯为成化皇帝朱见深专门为万贵妃烧制。",
+                    yes: function (index,layero){
+                        $('#list13').hide();
+                        $('#list14').show();
+                        layer.close(index);
+                        element.progress('demo', '81%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh14)', function(data){
+            if (data.value == 'd'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'下一题',
+                    content:"2010年英国班布里奇（Bainbridges）拍卖行拍出清乾隆年间粉彩镂空“转心瓶”，以折合人民币5.5亿元的高价一举刷新了5年前由元青花鬼谷子下山大罐创下的中国古代陶瓷艺术品拍卖纪录，这一成交价同时也是迄今为止全球范围内中国艺术品交易的最高价格。",
+                    yes: function (index,layero){
+                        $('#list14').hide();
+                        $('#list15').show();
+                        layer.close(index);
+                        element.progress('demo', '87%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'下一题',
+                    content:"正确答案是:D:清乾隆粉彩镂空转心瓶； 2010年英国班布里奇（Bainbridges）拍卖行拍出清乾隆年间粉彩镂空“转心瓶”，以折合人民币5.5亿元的高价一举刷新了5年前由元青花鬼谷子下山大罐创下的中国古代陶瓷艺术品拍卖纪录，这一成交价同时也是迄今为止全球范围内中国艺术品交易的最高价格。",
+                    yes: function (index,layero){
+                        $('#list14').hide();
+                        $('#list15').show();
+                        layer.close(index);
+                        element.progress('demo', '87%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh15)', function(data){
+            if (data.value == 'b'){
+                layer.open({
+                    title:'回答正确',
+                    btn:'附加题',
+                    content:"齐白石《松柏高立图·篆书四言联》 价格4.255亿元：2011年5月22日，在中国嘉德2011春拍现场，齐白石《松柏高立图·篆书四言联》从8800万起拍，拍卖过程持续了31分钟，最后以3亿7千万的落槌价被一买家拿下，加上15%的拍卖佣金，最终总成交价为4.255亿，创下中国近现代书画新纪录。",
+                    yes: function (index,layero){
+                        $('#list15').hide();
+                        $('#list16').show();
+                        layer.close(index);
+                        element.progress('demo', '100%');
+                    }
+                })
+            }else{
+                layer.open({
+                    btn:'附加题',
+                    content:"正确答案是:B:齐白石《松柏高立图·篆书四言联》 价格4.255亿元：2011年5月22日，在中国嘉德2011春拍现场，齐白石《松柏高立图·篆书四言联》从8800万起拍，拍卖过程持续了31分钟，最后以3亿7千万的落槌价被一买家拿下，加上15%的拍卖佣金，最终总成交价为4.255亿，创下中国近现代书画新纪录。",
+                    yes: function (index,layero){
+                        $('#list15').hide();
+                        $('#list16').show();
+                        layer.close(index);
+                        element.progress('demo', '100%');
+                    }
+                })
+            }
+
+        });
+        form.on('radio(wh16)', function (data) {
+            layer.open({
+                title: '南宋官窑',
+                btn: '结束',
+                content: "<h2>二级学院：媒体工程学院； 班级:软件工程二班； 组员：汤辰妍、杨金敏</h2>",
+                yes: function (index, layero) {
+                    $('#list15').hide();
+                    $('#list16').show();
+                    layer.close(index);
+                    element.progress('demo', '100%');
+                }
+            })
+
+        });
+    });
+    
+</script>
+</html>
