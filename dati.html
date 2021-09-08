@@ -40,7 +40,7 @@
 	
 <body>
 <img alt="nansong" src="layui/img/1.png" width="100%" height="100%"/>
-<div style="width:480px; margin:40px auto;">
+<div style="width:480px; margin:40px auto;height:250px;">
 
 	<div class="layui-progress layui-progress-big" lay-filter="demo" lay-showPercent="true">
 		<div class="layui-progress-bar layui-bg-blue" lay-percent="1%"></div>
@@ -333,23 +333,8 @@
 			</div>
 		</div>
 		<div class="list" id="list16">
-			<label class="layui-font-20">16:2020——2021学年基于HTML5的交互式课件短学期。</label>
-			<div class="layui-form">
-				<div class="layui-form-item">
-					<div class="layui-input-block">
-						<input type="radio" lay-filter="wh16" name="wh16" value="a" title="A：组长：tcy">
-					</div>
-					<div class="layui-input-block">
-						<input type="radio" lay-filter="wh16" name="wh16" value="b" title="B：组员：yjm">
-					</div>
-					<div class="layui-input-block">
-						<input type="radio" lay-filter="wh16" name="wh16" value="c" title="C：指导老师：mxm">
-					</div>
-					<div class="layui-input-block">
-						<input type="radio" lay-filter="wh16" name="wh16" value="d" title="D：班级：rg2">
-					</div>
-				</div>
-			</div>
+			<label class="layui-font-20"><p style="font-size: 45px">答题完成</p></label>
+			
 		</div>
 	</div>
 
@@ -773,20 +758,7 @@
             }
 
         });
-        form.on('radio(wh16)', function (data) {
-            layer.open({
-                title: '南宋官窑',
-                btn: '结束',
-                content: "<h2>二级学院：媒体工程学院； 班级:软件工程二班； 组员：汤辰妍、杨金敏</h2>",
-                yes: function (index, layero) {
-                    $('#list15').hide();
-                    $('#list16').show();
-                    layer.close(index);
-                    element.progress('demo', '100%');
-                }
-            })
-
-        });
+       
     });
     
 </script>

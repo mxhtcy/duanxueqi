@@ -134,8 +134,7 @@ a.link {
 		color:#fff;
 		display:block;
 		width: 100%;
-		padding:5px 200px;					
-		background: #666;
+		padding:5px 90px;					
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		-ms-border-radius: 5px;
@@ -146,11 +145,7 @@ a.link {
 		-o-box-sizing: border-box;		
 	}
 	
-		#nav li a:hover,
-		#nav li.current a {
-			background: #ccc;
-			color:#666;
-		}
+		
 		
 
 #info {
