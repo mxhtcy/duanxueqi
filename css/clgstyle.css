@@ -124,7 +124,12 @@ figure {
 .menu-btn__text img{
 	width:107px;
 	height:43px;
+	transition:all 0.5s ease;
 }
+.menu-btn__text img:hover{
+	transform: scale(1.2);
+}
+
 
 .filter {
   position: absolute;
